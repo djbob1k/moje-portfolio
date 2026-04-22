@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PEAK | Portfolio</title>
+    <title>PEAK | Kontakt</title>
     <style>
-        /* Sjednocený styl s index.html */
+        /* Použijeme stejné barvy jako u indexu */
         :root { 
             --olivova: #556b2f; 
             --tmava-hneda: #3e2723; 
-            --svetla-hneda: #d7ccc8;
             --pozadi: #f5f5dc; 
         }
         body { 
             font-family: "Times New Roman", serif; 
             background-color: var(--pozadi); 
-            color: var(--tmava-hneda);
-            margin:0; 
+            margin: 0; 
+            color: var(--tmava-hneda); 
             line-height: 1.6;
         }
         nav { 
@@ -29,49 +28,56 @@
             text-decoration: none; 
             margin: 0 15px; 
             font-weight: bold; 
-            font-size: 1.1rem;
         }
         nav a:hover { text-decoration: underline; }
-        
-        .container { max-width: 800px; margin: 20px auto; padding: 20px; }
-        
-        h1 { text-align: center; font-size: 2.5rem; color: var(--tmava-hneda); }
-        h2 { border-bottom: 3px solid var(--olivova); color: var(--olivova); padding-bottom: 5px; margin-top: 40px; }
-        
-        img { 
-            display: block;
-            max-width: 100%; 
-            height: auto; 
-            border: 8px solid var(--tmava-hneda); 
-            margin: 20px auto; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        
-        .anime-section { 
-            margin-bottom: 60px; 
-            background: rgba(255,255,255,0.3); 
+
+        .container { 
+            max-width: 800px; 
+            margin: 40px auto; 
             padding: 20px; 
-            border-radius: 10px;
+            text-align: center; 
         }
         
-        .rating {
+        h1 { font-size: 2.5rem; }
+
+        .social-link { 
+            display: inline-block; 
+            padding: 15px 25px; 
+            background: var(--tmava-hneda); 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin: 10px; 
             font-weight: bold;
-            color: #d32f2f;
-            font-size: 1.2rem;
+            transition: transform 0.2s, background 0.3s;
+        }
+        .social-link:hover { 
+            background: var(--olivova); 
+            transform: scale(1.05);
         }
 
-        .cta-link {
-            display: block;
-            text-align: center;
-            margin-top: 40px;
+        /* Sneak peek sekce */
+        .sneak-peek {
+            margin-top: 50px;
             padding: 20px;
-            background-color: var(--tmava-hneda);
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
+            border: 2px dashed var(--olivova);
+            background-color: rgba(85, 107, 47, 0.1);
         }
-        .cta-link:hover { background-color: var(--olivova); }
+
+        .secret-msg {
+            font-size: 0.7rem;
+            color: var(--svetla-hneda);
+            margin-top: 50px;
+            cursor: default;
+            user-select: none;
+        }
+        
+        /* Tohle se ukáže jen když na to někdo najede myší - tajný vzkaz */
+        .secret-msg:hover {
+            color: var(--tmava-hneda);
+        }
+
+        hr { border: 0; border-top: 1px solid var(--olivova); margin: 30px 0; }
     </style>
 </head>
 <body>
@@ -83,37 +89,37 @@
     </nav>
 
     <div class="container">
-        <h1>Moje PEAK Anime Recenze</h1>
-        <p style="text-align: center; font-style: italic;">"Pokud jsi tohle neviděl, jako bys ani nežil. DJ Bobo approved."</p>
+        <h1>Chceš kousek PEAKU?</h1>
+        <p>Máš nápad na projekt, co změní svět, nebo mi chceš jen poslat tip na anime, které jsem ještě neviděl (pochybuju, že takové existuje)? Ozvi se!</p>
+        
+        <p><strong>Dostupné komunikační kanály:</strong></p>
+        
+        <a href="https://github.com/djbob1k" class="social-link" target="_blank">Můj GitHub (Checkuj kód)</a>
+        
+        <div style="margin: 20px 0;">
+            <p><strong>E-mail:</strong> <a href="mailto:djbobo@seznam.cz" style="color: var(--olivova); font-weight: bold;">djbobo@seznam.cz</a></p>
+            <p><em>Odpovídám většinou hned, pokud zrovna nemám rozkoukanou finální epizodu sezóny.</em></p>
+        </div>
 
-        <section class="anime-section">
-            <h2>JOJO'S BIZARRE ADVENTURE</h2>
-            <p><strong>JOJO</strong> není jen anime, je to životní styl. Sledujeme šílenou cestu rodu Joestarů napříč generacemi. Od dýchacích technik až po neuvěřitelné "Standy". Každá část má jiný vibe, jiný vizuál a pokaždé je to naprostý masterpiece. Pokud nemáš oblíbenou pózu z Jojo, tak se mnou ani nemluv.</p>
-            <p class="rating">Hodnocení: 11/10 (Peak fikce)</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYDs8N5AzlfU-RNd-wWIJ7fKO5U9yAyrE_Kw&s" alt="Jojo">
-        </section>
+        <hr>
+        
+        <h3>Základna DJ Boba</h3>
+        <p>Kde se rodí legendární nápady?</p>
+        <p><strong>Praha 1, 12/1356</strong></p>
+        <p>(Nezastavuj se bez ohlášení, hlídá to tu můj Stand!)</p>
 
-        <section class="anime-section">
-            <h2>BERSERK (1997)</h2>
-            <p>Tohle je pro opravdové fajnšmekry. <strong>BERSERK</strong> je temný, brutální a emocionálně tě zničí. Příběh Gutse, osamělého žoldáka, a jeho rivality/přátelství s Griffithsem je to nejlepší, co bylo v žánru dark fantasy kdy napsáno. Zapomeň na moderní CGI remaky, originál z roku '97 má tu správnou depresi a atmosféru.</p>
-            <p class="rating">Hodnocení: Mužná slza/10</p>
-            <img src="img/berserk.jpg" alt="Berserk">
-        </section>
+        <div class="sneak-peek">
+            <h3>SNEAK PEEK: Co chystám?</h3>
+            <p>Pracuji na tajném algoritmu, který dokáže vypočítat přesnou úroveň "peakness" jakéhokoliv anime během první minuty. Stay tuned!</p>
+        </div>
 
-        <section class="anime-section">
-            <h2>DORORO</h2>
-            <p>Příběh o Hyakkimarovi (kterého já familiárně nazývám Bartoloměj), který byl při narození obrán o 48 částí těla démony. Teď si je bere zpět! Společně s malou Dororo putují feudálním Japonskem a sekají všechno, co jim stojí v cestě. Je to smutné, je to akční a animace od studia MAPPA je prostě... ano, uhodli jste, PEAK.</p>
-            <p class="rating">Hodnocení: Anatomický zázrak/10</p>
-            <img src="img/dororo.jpg" alt="Dororo">
-        </section>
+        <p class="secret-msg">Psst... pokud vidíš tenhle text, jsi skutečný fanoušek. Zkus označit text pod tímhle řádkem...</p>
+        <p style="color: transparent; user-select: all; font-size: 0.8rem;">Gratuluji! Našel jsi Easter Egg. Příští projekt bude legendární. DJ Bobo</p>
 
-        <section>
-            <a href="https://www.crunchyroll.com" target="_blank" class="cta-link">DOUPĚ PRO WEIBS: SLEDOVAT ANIME ONLINE</a>
-        </section>
     </div>
 
     <div style="text-align: center; padding: 20px; color: var(--olivova); font-size: 0.9rem;">
-        © 2024 DJ Bobo - Kurátor nejlepšího vkusu v ČR
+        © 2024 DJ Bobo - Oficiální kontakt pro elitu
     </div>
 
 </body>
