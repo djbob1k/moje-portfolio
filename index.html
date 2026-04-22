@@ -48,6 +48,23 @@
             text-align: center;
         }
 
+        /* Styl pro tlačítko */
+        .btn-spotify {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: var(--olivova);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-spotify:hover {
+            background-color: #6b843d;
+        }
+
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -62,6 +79,15 @@
             font-size: 0.9rem;
             color: var(--olivova);
         }
+
+        .call-to-action {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-top: 30px;
+            color: var(--tmava-hneda);
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
@@ -74,24 +100,36 @@
 
     <header>
         <h1>Vítejte na PEAK webu</h1>
-        <p>Osobní portfolio Jaroslava Pudelky</p>
+        <p>Osobní portfolio DJ Boba</p>
+        <a href="https://open.spotify.com/artist/14dmbYen0AciYxu5n4Fkpd" class="btn-spotify">Můj playlist na naladění na anime</a>
     </header>
 
     <div class="container">
         <h2>O mně</h2>
-        <p>Vítejte na mé vizitce. Jsem fanoušek kvalitního anime a toto je můj školní projekt vytvořený v HTML5 a CSS3.</p>
-        <p>Tento web slouží jako ukázka mé práce a mých zájmů.</p>
+        <p>Vítejte na mé digitální základně. Jsem student, vizionář a především hrdý vyznavač "peak" kultury. Kromě kódování v HTML a CSS trávím čas analýzou hlubokých dějových linek a hledáním té nejlepší animace, jakou svět poznal.</p>
+        
+        <p>Mým cílem je vytvořit prostor, kde se střetává estetika s funkčností. Když zrovna nepracuji na svých školních projektech, pravděpodobně mě najdete, jak se snažím dosáhnout osvícení skrze maraton oblíbených sérií nebo vedu filozofické debaty o tom, proč je můj vkus lepší než tvůj.</p>
+        
+        <h3>Zájmy:</h3>
+        <p>Kromě anime mě baví moderní technologie, objevování zapomenutých koutů internetu a neustálé vylepšování mého "setupu". Miluji kvalitní hudbu, která dodává mým dnům ten správný soundtrack, a občasný relax v přírodě (pokud tam je dobrý signál).</p>
+        
         <hr>
+        
         <h3>Moje dovednosti:</h3>
         <ul>
-            <li>Analýza peak fikce (Anime)</li>
-            <li>Základy HTML a CSS</li>
-            <li>Kritické myšlení u Berserka</li>
+            <li>Analýza peak fikce na akademické úrovni</li>
+            <li>Profesionální jezení pomerančů (včetně estetického loupání)</li>
+            <li>Plavání ve vlnách prokrastinace</li>
+            <li>Základy HTML a CSS (stále se učím nekřičet na monitor)</li>
+            <li>Kritické myšlení (zejména při hodnocení fillerových epizod)</li>
+            <li>Mistr v udržování očního kontaktu s lednicí</li>
         </ul>
+
+        <p class="call-to-action">ZKOUKNĚTE MOJE ANIME DOPORUČENÍ, PROTOŽE JSOU FAKT PEAK!</p>
     </div>
 
     <div class="footer">
-        &copy; 2024 Jára Pudelka - Vytvořeno pro projekt Osobní portfolio
+        © 2024 DJ Bobo - Vytvořeno pro projekt Osobní portfolio
     </div>
 
 </body>
