@@ -1,0 +1,59 @@
+
+        body {
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            font-family: Arial, sans-serif;
+            color: #254;
+        }
+
+        #main-container {
+            width: 80%;
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #ff69b4;
+            text-align: center;
+			  font-family: "Noto Sans JP", sans-serif;
+			  font-optical-sizing: auto;
+			  font-weight: 600;
+			  font-style: normal;
+        }
+
+        .highlight {
+            border: 2px #D2691E;
+            padding: 10px;
+            background-color: #FF7F50;
+			font-family: "Noto Sans JP", sans-serif;
+            font-optical-sizing: auto;
+			font-weight: 600;
+			font-style: normal;
+	
+        }
+
+        /* --- Změny zde --- */
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 5%;
+            transition: transform 0.3s ease; /* Plynulost animace (trvá 0.3 sekundy) */
+            cursor: pointer; /* Změní kurzor na ruku, aby bylo jasné, že je obrázek interaktivní */
+        }
+
+        img:hover {
+            transform: scale(1.2); /* Zvětšení na 120 % původní velikosti */
+        }
+        /* ------------------ */
+
+        ul {
+            list-style-position: inside;
+        }
+		
+
+  
